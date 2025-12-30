@@ -15,13 +15,13 @@ export default function HowItWorks() {
         <div className=" mx-auto grid grid-cols-2 gap-16 items-start">
           {/* LEFT COLUMN */}
           <div className="relative pr-50">
-            <h2 className="text-6xl font-bold text-gray-900 mb-6">
+            <h2 className="text-[42px] font-bold text-gray-900 mb-6">
               How AR Drawing
               <br />
               Works
             </h2>
 
-            <p className="text-[#1E1E1E] text-[24px] max-w-100 leading-relaxed mb-16">
+            <p className="text-[#1E1E1E] text-[22px] max-w-100 leading-relaxed mb-16">
               Learn to create sketches with AR Drawing. Upload or select images,
               choose a feature, and start sketching directly on your mobile.
             </p>
@@ -30,24 +30,22 @@ export default function HowItWorks() {
 
             <div className="absolute left-42 top-79">
               <div className="relative grid items-start justify-end gap-4  mt-30">
-              <span className="absolute right-0 -top-20 text-[170px] font-extrabold text-black/5">
-                1
-              </span>
+                <span className="absolute right-0 -top-20 text-[170px] font-extrabold text-black/5">
+                  1
+                </span>
 
-              <Dot />
+                <Dot />
 
-              <Step
-                title="Upload or Select Sketch"
-                desc="Upload any image from your gallery, capture a photo with your camera, or select a sketch from the app."
-              />
+                <Step
+                  title="Upload or Select Sketch"
+                  desc="Upload any image from your gallery, capture a photo with your camera, or select a sketch from the app."
+                />
+              </div>
             </div>
-            </div>
-            
           </div>
 
           {/* RIGHT FLOW */}
           <div className="relative">
-            
             {/* STEP 2 */}
             <div className="absolute top-72 grid items-start gap-4">
               <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">

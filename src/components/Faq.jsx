@@ -1,0 +1,106 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { ChevronDown } from "lucide-react";
+
+const faqs = [
+  {
+    question: "What services does DEVSRANK offer?",
+    answer:
+      "DEVSRANK offers a wide range of digital solutions, including mobile app development, website development, UI/UX design, and digital strategy to help businesses grow and innovate.",
+  },
+  {
+    question: "What services does DEVSRANK offer?",
+    answer:
+      "DEVSRANK offers a wide range of digital solutions, including mobile app development, website development, UI/UX design, and digital strategy to help businesses grow and innovate.",
+  },
+  {
+    question: "What services does DEVSRANK offer?",
+    answer:
+      "DEVSRANK offers a wide range of digital solutions, including mobile app development, website development, UI/UX design, and digital strategy to help businesses grow and innovate.",
+  },
+  {
+    question: "What services does DEVSRANK offer?",
+    answer:
+      "DEVSRANK offers a wide range of digital solutions, including mobile app development, website development, UI/UX design, and digital strategy to help businesses grow and innovate.",
+  },
+  {
+    question: "What services does DEVSRANK offer?",
+    answer:
+      "DEVSRANK offers a wide range of digital solutions, including mobile app development, website development, UI/UX design, and digital strategy to help businesses grow and innovate.",
+  },
+];
+
+export default function Faq() {
+  const [openIndex, setOpenIndex] = useState(null); // ✅ remove :number
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  return (
+    <section className="bg-[#FFF7F5] py-16">
+      <div className="MyContainer">
+        <h2 className="text-4xl md:text-[42px] font-extrabold text-center text-black">
+          Frequently Asked Questions
+        </h2>
+
+        <p className="mt-4 text-center text-gray-700 text-[20px] max-w-4xl mx-auto">
+          Everything you need to know about using our AR drawing app to sketch,
+          trace, and create art easily.
+        </p>
+
+        <div className="mt-14 space-y-4">
+          {faqs.map((faq, index) => {
+            const isOpen = openIndex === index;
+            return (
+              <div
+                key={index}
+                className={`bg-[#FFA3A229] overflow-hidden transition-all duration-300 ${
+                  isOpen ? "rounded-3xl" : "rounded-full"
+                }`}
+              >
+                <button
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  className="
+                    w-full
+                    flex
+                    items-center
+                    justify-between
+                    px-8
+                    py-5
+                    text-left
+                    font-medium
+                    text-gray-900
+                    text-[20px]
+                  "
+                >
+                  {faq.question}
+                  <ChevronDown
+                    size={20}
+                    className={`transition-transform duration-300 ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                <div
+                  className={`px-8 overflow-hidden transition-all duration-300 ${
+                    isOpen ? "max-h-40 pb-6" : "max-h-0"
+                  }`}
+                >
+                  <p className="text-gray-600 text-[18px] leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}

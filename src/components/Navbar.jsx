@@ -2,16 +2,15 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="w-full bg-[#FFF1EE] border-b-2 border-[#FFB3AA]">
-      <nav className="max-w-7xl mx-auto py-4 flex items-center MyContainer">
-        
+    <header className="w-full h-[10vh] bg-[#FFF1EE] border-b-2 border-[#FFB3AA]">
+      <nav className="h-full flex items-center MyContainer">
         {/* Logo */}
         <div className="mr-14">
           <Image
             src="/images/logo.png"
             alt="Logo"
-            width={60}
-            height={60}
+            width={45}
+            height={50}
             className="rounded-[14px] border border-[#fdcac8]"
           />
         </div>
@@ -19,8 +18,8 @@ export default function Navbar() {
         {/* Menu */}
         <ul
           className="
-            hidden md:flex items-center gap-14
-            text-[24px]
+            hidden md:flex items-center gap-10
+            text-[18px]
             leading-none
             tracking-[0.02em]
             text-gray-900
@@ -38,7 +37,6 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-
       </nav>
     </header>
   );

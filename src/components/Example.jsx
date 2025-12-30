@@ -25,11 +25,11 @@ export default function ExploreSketches() {
     <section className="bg-[#FFF7F5] py-20">
       <div className="MyContainer">
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-black">
+        <h2 className="text-4xl md:text-[42px] font-extrabold text-center text-black">
           Explore Stunning AR Sketches
         </h2>
 
-        <p className="mt-4 text-center text-gray-700 text-[24px] max-w-6xl mx-auto">
+        <p className="mt-4 text-center text-gray-700 text-[20px] max-w-4xl mx-auto">
           Discover immersive augmented reality sketches, creative drawing ideas,
           and interactive visuals directly in the app
         </p>
