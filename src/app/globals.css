@@ -12,6 +12,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
+.MyContainer{
+  max-width: 1400px;
+  width: 90%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -23,4 +30,40 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.card-tall {
+  position: relative;
+  height: 520px;
+  background: #FFE9E5;
+  border: 1px solid #FFB3AA;
+  border-radius: 22px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.card-wide {
+  position: relative;
+  height: 240px;
+  background: #FFE9E5;
+  border: 1px solid #FFB3AA;
+  border-radius: 22px;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.card-small {
+  position: relative;
+  height: 180px;
+  background: #FFE9E5;
+  border: 1px solid #FFB3AA;
+  border-radius: 22px;
+  padding: 14px;
+  overflow: hidden;
+}
+
+.img {
+  object-fit: contain;
 }
