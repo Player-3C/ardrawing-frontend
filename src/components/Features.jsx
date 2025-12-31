@@ -20,42 +20,40 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="bg-[#FFF7F5] py-16">
-      <section id="features" className="">
+    <div className="bg-[#FFF7F5] md:py-16 py-8">
+      <section id="features">
         <div className="MyContainer">
-          <h2 className="text-4xl md:text-[42px] font-extrabold text-center text-black">
+          <h2 className="text-[28px] md:text-[42px] font-bold md:font-extrabold text-center text-black">
             Smart Drawing Features
           </h2>
 
-          <p className="mt-4 text-center text-gray-700 text-[22px] max-w-6xl mx-auto">
+          <p className="mt-4 text-center text-gray-700 text-[16px] md:text-[18px] max-w-6xl mx-auto">
             Discover smart drawing features that let you sketch freely, trace
             images, and draw real-world objects using your phone camera with
             ease.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-6 md:pt-12">
             {features.map((f) => (
               <div
                 key={f.title}
                 className="
-        min-h-[20rem]
-        w-full
-        bg-[#FFE9E5]
-        border border-[#FFB3AA]
-        rounded-[22px]
-        shadow
-        px-9 py-12
-        flex flex-col
-      "
+                  min-h-[13rem] md:min-h-[16rem] lg:min-h-[16rem] w-full bg-[#FFE9E5] border border-[#FFB3AA] 
+                  rounded-[22px] shadow 
+                  px-6 py-9 
+                  md:px-6 md:py-9
+                  lg:px-9 lg:py-12 
+                  flex flex-col
+                "
               >
                 <div className="flex items-center gap-3">
                   <f.icon className="text-[#FF6B5E] w-7 h-7 shrink-0" />
-                  <h3 className="text-black text-[26px] font-bold tracking-wide">
+                  <h3 className="text-black text-[20px] md:text-[20px] lg:text-[24px] font-bold tracking-wide">
                     {f.title}
                   </h3>
                 </div>
 
-                <p className="text-gray-700 mt-6 text-[20px] leading-relaxed">
+                <p className="text-gray-700 mt-6 text-[16px] md:text-[16px] lg:text-[18px] leading-relaxed">
                   {f.desc}
                 </p>
               </div>

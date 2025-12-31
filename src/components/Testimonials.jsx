@@ -17,20 +17,20 @@ const reviews = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#FFF7F5] py-16">
+    <section className="bg-[#FFF7F5] py-8 md:py-16">
       <div className="MyContainer">
         {/* Heading */}
-        <h2 className="text-4xl md:text-[42px] font-extrabold text-center text-black">
+        <h2 className="text-[32px] md:text-[42px] md:font-extrabold font-bold text-center text-black">
           User Reviews of AR Drawing
         </h2>
 
-        <p className="mt-4 text-center text-gray-700 text-[22px] max-w-6xl mx-auto">
+        <p className="mt-4 text-center text-gray-700 text-[16px] md:text-[18px] max-w-6xl mx-auto">
           Real feedback from artists, beginners, and creators using our AR drawing
           and sketching tools.
         </p>
 
         {/* Reviews */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-8 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((r, i) => (
             <div
               key={i}
@@ -38,7 +38,9 @@ export default function Testimonials() {
                 bg-[#FFE9E5]
                 border border-[#FFB3AA]
                 rounded-[22px]
-                p-8
+                p-4
+                md:p-6
+                lg:p-8
                 flex flex-col
                 gap-4
                 shadow-sm
@@ -67,7 +69,7 @@ export default function Testimonials() {
               </div>
 
               {/* Review text */}
-              <p className="text-gray-700 text-[18px] leading-relaxed">
+              <p className="text-gray-700 text:[16px] md:text-[18px] leading-relaxed">
                 {r.text}
               </p>
             </div>

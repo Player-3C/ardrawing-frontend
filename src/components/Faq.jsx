@@ -42,18 +42,18 @@ export default function Faq() {
   if (!mounted) return null;
 
   return (
-    <section className="bg-[#FFF7F5] py-16">
+    <section className="bg-[#FFF7F5] md:py-16 py-8">
       <div className="MyContainer">
-        <h2 className="text-4xl md:text-[42px] font-extrabold text-center text-black">
+        <h2 className="text-[32px] md:text-[42px] md:font-extrabold font-bold text-center text-black">
           Frequently Asked Questions
         </h2>
 
-        <p className="mt-4 text-center text-gray-700 text-[20px] max-w-4xl mx-auto">
+        <p className="mt-4 text-center text-gray-700 text-[16px] md:text-[18px] max-w-4xl mx-auto">
           Everything you need to know about using our AR drawing app to sketch,
           trace, and create art easily.
         </p>
 
-        <div className="mt-14 space-y-4">
+        <div className="md:mt-14 mt-8 space-y-4">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
@@ -75,7 +75,8 @@ export default function Faq() {
                     text-left
                     font-medium
                     text-gray-900
-                    text-[20px]
+                    text-[16px]
+                    md:text-[20px]
                   "
                 >
                   {faq.question}
@@ -92,7 +93,7 @@ export default function Faq() {
                     isOpen ? "max-h-40 pb-6" : "max-h-0"
                   }`}
                 >
-                  <p className="text-gray-600 text-[18px] leading-relaxed">
+                  <p className="text-gray-600 md:text-[18px] text-[16px] leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>

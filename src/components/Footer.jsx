@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FFE9E6] py-25">
+    <footer className="bg-[#FFE9E6] md:py-25 py-18">
       <div className="MyContainer">
         <div className="flex flex-col items-center text-center">
 
@@ -21,22 +21,22 @@ export default function Footer() {
           </div>
 
           {/* TITLE */}
-          <h3 className="text-[36px] font-bold text-[#FF7F73] mb-10">
+          <h3 className="text-[32px] md:text-[36px] font-bold text-[#FF7F73] md:mb-10 mb-5">
             AR Drawing
           </h3>
 
           {/* LINKS */}
-          <div className="flex items-center gap-14 mb-10">
+          <div className="flex items-center md:gap-14 gap-8 md:mb-10 mb-5">
             <Link
               href="/privacy-policy"
-              className="text-[20px] font-bold text-gray-900 hover:opacity-80 transition"
+              className="text-[16px] md:text-[18px] font-bold text-gray-900 hover:opacity-80 transition"
             >
               Privacy Policy
             </Link>
 
             <Link
               href="/terms"
-              className="text-[20px] font-bold text-gray-900 hover:opacity-80 transition"
+              className="text-[16px] md:text-[18px] font-bold text-gray-900 hover:opacity-80 transition"
             >
               Terms & Conditions
             </Link>

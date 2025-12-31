@@ -5,18 +5,18 @@ export default function ExploreSketches() {
     <section className="bg-[#FFF7F5] pt-16 pb-10 overflow-hidden">
       <div className="MyContainer">
         {/* Heading */}
-        <h2 className="text-4xl md:text-[42px] font-extrabold text-center text-black">
+        <h2 className="text-[28px] md:text-[42px] font-bold md:font-extrabold text-center text-black">
           Explore Stunning AR Sketches
         </h2>
 
-        <p className="mt-4 text-center text-gray-700 text-[20px] max-w-4xl mx-auto">
+        <p className="md:mt-4 text-center text-gray-700 text-[16px] md:text-[18px] max-w-3xl mx-auto">
           Discover immersive augmented reality sketches, creative drawing ideas,
           and interactive visuals directly in the app
         </p>
 
         <div className="grid gap-6">
           {/* GRID */}
-          <div className="grid grid-cols-12 gap-6 pt-16">
+          <div className="grid grid-cols-12 gap-6 md:pt-16 pt-8">
             {/* Tall Card */}
             <div className="col-span-12 sm:col-span-6 md:col-span-3">
               <div className="h-126 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
