@@ -1,18 +1,18 @@
-import { Upload, Camera, Pencil } from "lucide-react";
+import Image from "next/image";
 
 const features = [
   {
-    icon: Upload,
+    img: "/images/upload.png",
     title: "Upload & Draw",
     desc: "Upload any image from your gallery or take a new photo with your mobile camera, then draw or trace it easily on your phone.",
   },
   {
-    icon: Camera,
+    img: "/images/draw.png",
     title: "AR Sketch Drawing",
     desc: "Draw sketches in real time using your mobile camera with AR guidance. Capture your ideas & create high-quality sketch instantly on your phone.",
   },
   {
-    icon: Pencil,
+    img: "/images/trace.png",
     title: "Sketch Tracing",
     desc: "Select a sketch, choose the trace feature, and start tracing directly on your mobile screen for a smooth and precise drawing experience.",
   },
@@ -20,14 +20,14 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="bg-[#FFF7F5] md:py-16 py-8">
+    <div className="bg-[#FFF7F5] py-8 md:py-16">
       <section id="features">
         <div className="MyContainer">
           <h2 className="text-[28px] md:text-[42px] font-bold md:font-extrabold text-center text-black">
             Smart Drawing Features
           </h2>
 
-          <p className="mt-4 text-center text-gray-700 text-[16px] md:text-[18px] max-w-6xl mx-auto">
+          <p className="mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] max-w-6xl mx-auto">
             Discover smart drawing features that let you sketch freely, trace
             images, and draw real-world objects using your phone camera with
             ease.
@@ -38,22 +38,29 @@ export default function Features() {
               <div
                 key={f.title}
                 className="
-                  min-h-[13rem] md:min-h-[16rem] lg:min-h-[16rem] w-full bg-[#FFE9E5] border border-[#FFB3AA] 
-                  rounded-[22px] shadow 
-                  px-6 py-9 
-                  md:px-6 md:py-9
-                  lg:px-9 lg:py-12 
+                  min-h-[13rem] md:min-h-[16rem] 
+                  bg-[#FFE9E5] border border-[#FFB3AA]
+                  rounded-[22px] shadow
+                  px-6 py-9 md:px-6 md:py-9 lg:px-6 lg:py-9
                   flex flex-col
                 "
               >
-                <div className="flex items-center gap-3">
-                  <f.icon className="text-[#FF6B5E] w-7 h-7 shrink-0" />
-                  <h3 className="text-black text-[20px] md:text-[20px] lg:text-[24px] font-bold tracking-wide">
+                {/* IMAGE */}
+                <div className="flex items-center gap-4">
+                  <Image
+                    src={f.img}
+                    alt={f.title}
+                    width={35}
+                    height={35}
+                    className="object-contain"
+                  />
+
+                  <h3 className="text-black text-[20px] lg:text-[24px] font-bold tracking-wide">
                     {f.title}
                   </h3>
                 </div>
 
-                <p className="text-gray-700 mt-6 text-[16px] md:text-[16px] lg:text-[18px] leading-relaxed">
+                <p className="text-gray-700 mt-6 text-[16px] lg:text-[18px] leading-relaxed">
                   {f.desc}
                 </p>
               </div>

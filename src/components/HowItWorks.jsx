@@ -5,17 +5,17 @@ export default function HowItWorks() {
     <div className="bg-[#FFF7F5] py-8 md:py-16">
       {/* Desktop version: 1440px and above */}
       <section
-        className="hidden xl:block MyContainer relative overflow-hidden min-h-180"
+        className="hidden xl:block MyContainer relative overflow-hidden min-h-155"
         style={{
           backgroundImage: "url('/images/hiw-bg.png')",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "left 0px bottom 190px",
-          backgroundSize: "1200px",
+          backgroundPosition: "left -20px top 15px",
+          backgroundSize: "1040px",
         }}
       >
         <div className="mx-auto grid grid-cols-2 gap-16 items-start">
           {/* LEFT COLUMN */}
-          <div className="relative pr-50">
+          <div className="relative ">
             <h2 className="text-[42px] font-bold text-gray-900 mb-6">
               How AR Drawing
               <br />
@@ -28,7 +28,7 @@ export default function HowItWorks() {
             </p>
 
             {/* STEP 1 */}
-            <div className="absolute left-42 top-79">
+            <div className="absolute left-42 top-65">
               <div className="relative grid items-start justify-end gap-4 mt-30">
                 <span className="absolute right-0 -top-20 text-[170px] font-extrabold text-black/5">
                   1
@@ -45,7 +45,7 @@ export default function HowItWorks() {
           {/* RIGHT FLOW */}
           <div className="relative">
             {/* STEP 2 */}
-            <div className="absolute top-72 grid items-start gap-4">
+            <div className="absolute top-62 grid items-start gap-4">
               <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
                 2
               </span>
@@ -57,7 +57,7 @@ export default function HowItWorks() {
             </div>
 
             {/* STEP 3 */}
-            <div className="absolute left-82 top-4 grid items-start gap-4">
+            <div className="absolute right-0 top-5 grid items-start gap-4">
               <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
                 3
               </span>

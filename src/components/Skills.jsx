@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Skills() {
   return (
     <div className="bg-[#FFF7F5] py-8 md:py-16">
@@ -8,7 +9,7 @@ export default function Skills() {
               Boost Your Drawing Skills
             </h2>
 
-            <p className="md:mt-4 text-center text-gray-700 text-[16px] md:text-[18px] max-w-6xl mx-auto">
+            <p className="md:mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] max-w-6xl mx-auto">
               Practice drawing regularly using AR guidance and smart tracing
               features that help you improve accuracy and control. AR Drawing
               makes learning easier by guiding your hand, helping you build
@@ -18,25 +19,16 @@ export default function Skills() {
 
             <div className="flex justify-center">
               <button className="flex mt-6 items-center gap-3 px-10 py-3 rounded-full text-white shadow-lg bg-gradient-to-r from-[#FF6B6B] to-[#FF9F80] hover:opacity-90 transition text-[16px] md:text-[18px] font-medium">
-              {" "}
-              <span>Start Drawing</span> {/* Pencil Icon */}{" "}
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
                 {" "}
-                <path
-                  d="M3 21l3.75-.75L20.5 6.5a2.12 2.12 0 0 0-3-3L3.75 17.25 3 21z"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />{" "}
-              </svg>{" "}
-            </button>
+                <span>Start Drawing</span> {/* Pencil Icon */}{" "}
+                <Image
+                  src="/images/pencil.png"
+                  alt="Pencil Icon"
+                  width={18}
+                  height={18}
+                  className="object-contain"
+                />
+              </button>
             </div>
           </div>
         </div>

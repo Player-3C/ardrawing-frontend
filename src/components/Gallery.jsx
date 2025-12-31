@@ -9,7 +9,7 @@ export default function ExploreSketches() {
           Explore Stunning AR Sketches
         </h2>
 
-        <p className="md:mt-4 text-center text-gray-700 text-[16px] md:text-[18px] max-w-3xl mx-auto">
+        <p className="md:mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] max-w-3xl mx-auto">
           Discover immersive augmented reality sketches, creative drawing ideas,
           and interactive visuals directly in the app
         </p>

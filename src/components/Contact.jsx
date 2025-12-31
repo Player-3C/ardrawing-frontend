@@ -19,15 +19,15 @@ export default function Contact() {
         <div className="bg-[#FFE9E6] rounded-4xl p-3 md:p-3 grid grid-cols-1 lg:grid-cols-3 gap-8 border border-[#FFB1AC]">
 
           {/* LEFT INFO */}
-          <div className="bg-[#FFF4F2] rounded-[28px] p-6 md:p-8 flex flex-col justify-between">
+          <div className="bg-[#FFF4F2] rounded-[28px] p-6 md:p-6 flex flex-col justify-between">
             <div>
               <h2 className="text-[32px] md:text-[36px] font-extrabold text-black">Contact Us</h2>
-              <p className="mt-3 text-gray-700 text-[16px] md:text-[18px] leading-relaxed">
+              <p className="mt-3 text-[#1e1e1e] text-[16px] md:text-[18px] leading-relaxed">
                 Contact us for help with AR drawing, tracing, and sketching.
               </p>
             </div>
 
-            <div className="mt-6 space-y-6 text-gray-800">
+            <div className="mt-6 space-y-6 text-[#1e1e1e]">
               <div className="flex items-center gap-4">
                 <Phone size={20} />
                 <span className="text-[16px] md:text-[18px]">+92 (300) 1234 968</span>
@@ -40,7 +40,7 @@ export default function Contact() {
 
               <div className="flex items-start gap-4">
                 <MapPin size={40} />
-                <span className="leading-relaxed text-[16px] md:text-[18px]">
+                <span className="leading-relaxed text-[16px] md:text-[16px] md:pb-4">
                   Office #112, 2nd Floor Kohinoor Plaza 1,
                   Faisalabad, Punjab, Pakistan
                 </span>
@@ -59,11 +59,11 @@ export default function Contact() {
             </div>
 
             <div className="mt-10 grid gap-5">
-              <p className="text-[16px] md:text-[18px] font-medium text-gray-800 mb-3">
+              <p className="text-[16px] md:text-[18px] font-medium text-[#1e1e1e] mb-3">
                 Select Subject
               </p>
 
-              <div className="flex flex-wrap gap-x-10 gap-y-3 text-gray-700 text-[16px] md:text-[18px]">
+              <div className="flex flex-wrap gap-x-10 gap-y-3 text-[#1e1e1e] text-[16px] md:text-[18px]">
                 {subjects.map((s) => (
                   <Radio key={s} label={s} selected={subject} onChange={setSubject} />
                 ))}

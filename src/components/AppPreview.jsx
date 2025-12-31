@@ -11,7 +11,7 @@ export default function AppPreview() {
             alt="AR Drawing App Preview"
             width={700}
             height={500}
-            className="drop-shadow-2xl w-full max-w-[700px] h-auto"
+            className="drop-shadow-2xl w-full max-w-[700px] h-auto md:-ml-16"
           />
         </div>
 

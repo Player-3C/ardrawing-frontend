@@ -48,7 +48,7 @@ export default function Faq() {
           Frequently Asked Questions
         </h2>
 
-        <p className="mt-4 text-center text-gray-700 text-[16px] md:text-[18px] max-w-4xl mx-auto">
+        <p className="mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] max-w-4xl mx-auto">
           Everything you need to know about using our AR drawing app to sketch,
           trace, and create art easily.
         </p>
@@ -89,9 +89,14 @@ export default function Faq() {
                 </button>
 
                 <div
-                  className={`px-8 overflow-hidden transition-all duration-300 ${
-                    isOpen ? "max-h-40 pb-6" : "max-h-0"
+                  className={`px-8 overflow-hidden transition-all duration-300 ease-in-out ${
+                    isOpen
+                      ? "opacity-100 translate-y-0 pb-6"
+                      : "opacity-0 -translate-y-2 pointer-events-none"
                   }`}
+                  style={{
+                    maxHeight: isOpen ? "500px" : "0px",
+                  }}
                 >
                   <p className="text-gray-600 md:text-[18px] text-[16px] leading-relaxed">
                     {faq.answer}
