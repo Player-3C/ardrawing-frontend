@@ -19,7 +19,7 @@ export default function ExploreSketches() {
           <div className="grid grid-cols-12 gap-6 md:pt-16 pt-8">
             {/* Tall Card */}
             <div className="col-span-12 sm:col-span-6 md:col-span-3">
-              <div className="h-126 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-126 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/girl.png"
                   alt=""
@@ -31,7 +31,7 @@ export default function ExploreSketches() {
 
             {/* Two Medium */}
             <div className="col-span-12 sm:col-span-6 md:col-span-3 flex flex-col gap-6">
-              <div className="h-60 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-60 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/lion.png"
                   alt=""
@@ -39,7 +39,7 @@ export default function ExploreSketches() {
                   height={230}
                 />
               </div>
-              <div className="h-60 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-60 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/spiderman.png"
                   alt=""
@@ -51,7 +51,7 @@ export default function ExploreSketches() {
 
             {/* Small Stack */}
             <div className="col-span-6 md:col-span-2 flex flex-col gap-6">
-              <div className="h-60 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-60 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/panda.png"
                   alt=""
@@ -59,7 +59,7 @@ export default function ExploreSketches() {
                   height={120}
                 />
               </div>
-              <div className="h-60 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-60 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/girl2.png"
                   alt=""
@@ -71,7 +71,7 @@ export default function ExploreSketches() {
 
             {/* Wide Cards */}
             <div className="col-span-6 md:col-span-4 flex flex-col gap-6">
-              <div className="h-75 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-75 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/kids.png"
                   alt=""
@@ -79,7 +79,7 @@ export default function ExploreSketches() {
                   height={120}
                 />
               </div>
-              <div className="h-45 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-45 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/eyes.png"
                   alt=""
@@ -94,7 +94,7 @@ export default function ExploreSketches() {
           <div className="grid grid-cols-12 gap-6">
             {/* Column A – Wide Top + Short Bottom */}
             <div className="col-span-12 sm:col-span-6 md:col-span-3 flex flex-col gap-6">
-              <div className="h-75 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-75 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/castle.png"
                   alt=""
@@ -102,7 +102,7 @@ export default function ExploreSketches() {
                   height={120}
                 />
               </div>
-              <div className="h-45 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-45 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/lipsh.png"
                   alt=""
@@ -114,7 +114,7 @@ export default function ExploreSketches() {
 
             {/* Column B – Two Square Cards */}
             <div className="col-span-6 sm:col-span-3 md:col-span-2 flex flex-col gap-6">
-              <div className="h-60 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-60 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/flowers.png"
                   alt=""
@@ -122,7 +122,7 @@ export default function ExploreSketches() {
                   height={120}
                 />
               </div>
-              <div className="h-60 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-60 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/baby.png"
                   alt=""
@@ -134,7 +134,7 @@ export default function ExploreSketches() {
 
             {/* Column C – Medium Width Stack */}
             <div className="col-span-6 sm:col-span-3 md:col-span-3 flex flex-col gap-6">
-              <div className="h-60 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-60 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/wolf.png"
                   alt=""
@@ -142,7 +142,7 @@ export default function ExploreSketches() {
                   height={230}
                 />
               </div>
-              <div className="h-60 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-60 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/police.png"
                   alt=""
@@ -154,7 +154,7 @@ export default function ExploreSketches() {
 
             {/* Column D – Tall Card */}
             <div className="col-span-12 sm:col-span-6 md:col-span-4">
-              <div className="h-126 bg-[#FFE9E5] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
+              <div className="h-126 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">
                 <Image
                   src="/images/sketches/gemini.png"
                   alt=""

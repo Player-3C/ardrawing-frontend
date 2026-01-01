@@ -2,10 +2,12 @@ import { div } from "framer-motion/client";
 
 export default function HowItWorks() {
   return (
-    <div className="bg-[#FFF7F5] py-8 md:py-16">
+    <div id="explore" className="bg-[#FFF7F5] py-8 md:py-16">
       {/* Desktop version: 1440px and above */}
+
+      {/* This div is hidden between 1150px - 1440px for responsive curve bg-line on Laptop */}
       <section
-        className="hidden xl:block MyContainer relative overflow-hidden min-h-155"
+        className="my-div1 hidden xl:block MyContainer max-w-6xl w-[90%] m-auto relative overflow-hidden min-h-155"
         style={{
           backgroundImage: "url('/images/hiw-bg.png')",
           backgroundRepeat: "no-repeat",
@@ -19,7 +21,7 @@ export default function HowItWorks() {
             <h2 className="text-[42px] font-bold text-gray-900 mb-6">
               How AR Drawing
               <br />
-              Works
+              Works one
             </h2>
 
             <p className="text-[#1E1E1E] text-[18px] max-w-100 leading-relaxed mb-16">
@@ -46,6 +48,74 @@ export default function HowItWorks() {
           <div className="relative">
             {/* STEP 2 */}
             <div className="absolute top-62 grid items-start gap-4">
+              <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
+                2
+              </span>
+              <Dot />
+              <Step
+                title="Choose Feature"
+                desc="Select whether you want to trace the sketch or draw it using AR mode for real-time guidance."
+              />
+            </div>
+
+            {/* STEP 3 */}
+            <div className="absolute right-0 top-5 grid items-start gap-4">
+              <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
+                3
+              </span>
+              <Dot />
+              <Step
+                title="Start Drawing or Tracing"
+                desc="Begin sketching or tracing directly on your mobile screen to create accurate, professional-quality artwork."
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hidden between 1150px and 1440px for responsive curve bg-line on Large Screens then Laptop  */}
+      <section
+        className="my-div2 hidden xl:block MyContainer max-w-6xl w-[90%] m-auto relative overflow-hidden min-h-200"
+        style={{
+          backgroundImage: "url('/images/hiw-bg.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "left -20px top 25px",
+          backgroundSize: "1280px",
+        }}
+      >
+        <div className="mx-auto grid grid-cols-2 gap-16 items-start">
+          {/* LEFT COLUMN */}
+          <div className="relative">
+            <h2 className="text-[42px] font-bold text-gray-900 mb-6">
+              How AR Drawing
+              <br />
+              Works
+            </h2>
+
+            <p className="text-[#1E1E1E] text-[18px] max-w-100 leading-relaxed mb-16">
+              Learn to create sketches with AR Drawing. Upload or select images,
+              choose a feature, and start sketching directly on your mobile.
+            </p>
+
+            {/* STEP 1 */}
+            <div className="absolute left-42 top-88">
+              <div className="relative grid items-start justify-end gap-4 mt-30">
+                <span className="absolute right-0 -top-20 text-[170px] font-extrabold text-black/5">
+                  1
+                </span>
+                <Dot />
+                <Step
+                  title="Upload or Select Sketch"
+                  desc="Upload any image from your gallery, capture a photo with your camera, or select a sketch from the app."
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT FLOW */}
+          <div className="relative">
+            {/* STEP 2 */}
+            <div className="absolute top-78 grid items-start gap-4">
               <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
                 2
               </span>
@@ -132,7 +202,9 @@ function StepMobile({ number, title, desc }) {
       <span className="text-[48px] sm:text-[56px] font-extrabold text-black/10">
         {number}
       </span>
-      <h4 className="font-semibold text-gray-900 text-[18px] sm:text-[20px]">{title}</h4>
+      <h4 className="font-semibold text-gray-900 text-[18px] sm:text-[20px]">
+        {title}
+      </h4>
       <p className="text-[#6B6B6B] text-[16px] sm:text-[18px] leading-relaxed max-w-full sm:max-w-lg">
         {desc}
       </p>

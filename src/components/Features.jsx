@@ -20,8 +20,8 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="bg-[#FFF7F5] py-8 md:py-16">
-      <section id="features">
+    <div id="features" className="bg-[#FFF7F5] py-8 md:py-16">
+      <section>
         <div className="MyContainer">
           <h2 className="text-[28px] md:text-[42px] font-bold md:font-extrabold text-center text-black">
             Smart Drawing Features
@@ -39,7 +39,7 @@ export default function Features() {
                 key={f.title}
                 className="
                   min-h-[13rem] md:min-h-[16rem] 
-                  bg-[#FFE9E5] border border-[#FFB3AA]
+                  bg-[#FFA3A229] border border-[#FFB3AA]
                   rounded-[22px] shadow
                   px-6 py-9 md:px-6 md:py-9 lg:px-6 lg:py-9
                   flex flex-col

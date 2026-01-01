@@ -9,17 +9,18 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-[#FFF1EE] border-b-2 border-[#FFB3AA]">
-      <nav className="MyContainer flex items-center gap-16 h-[10vh] md:h-[12vh] relative">
+      <nav className="MyContainer flex items-center gap-25 h-[10vh] md:h-[12vh] relative">
 
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center gap-3">
           <Image
             src="/images/logo.png"
             alt="Logo"
-            width={80}
-            height={80}
-            className="md:w-12 md:h-12"
+            width={150}
+            height={150}
+            className="md:h-[8vh] md:w-[9vh]"
           />
+          <h2 className="hidden md:block font-bold bg-linear-to-r from-[#FF6B6B] to-[#FF9F80] bg-clip-text text-transparent text-[22px] whitespace-nowrap">AR Drawing</h2>
         </div>
 
         {/* Desktop Menu */}
@@ -38,15 +39,16 @@ export default function Navbar() {
   </ul>
 
   {/* IMAGE pushed to right */}
-  <div className="md:ml-auto">
-    <Image
-      src="/images/appstore.png"
-      alt="Download on the App Store"
-      width={100}
-      height={40}
-      className=" md:w-[150px]"
-    />
-  </div>
+  <div className=" md:ml-auto">
+  <Image
+    src="/images/appstore.png"
+    alt="Download on the App Store"
+    width={100}
+    height={40}
+    className="md:w-[150px]"
+  />
+</div>
+
 </div>
 
 
@@ -76,13 +78,13 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <ul className="md:hidden absolute top-[10vh] left-1/2 -translate-x-1/2 w-[90%] bg-white rounded-3xl shadow-lg flex flex-col divide-y">
+          <ul className="z-10 md:hidden absolute top-[10vh] left-1/2 -translate-x-1/2 w-[90%] bg-white rounded-3xl shadow-lg flex flex-col divide-y">
             {menuItems.map((item) => (
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase().replace(" ", "")}`}
                   onClick={() => setIsOpen(false)}
-                  className="block py-4 text-center text-black font-semibold text-[18px] hover:bg-[#FFE6E1]"
+                  className="block py-4 text-center text-black font-semibold text-[16px] hover:bg-[#FFE6E1]"
                 >
                   {item}
                 </a>

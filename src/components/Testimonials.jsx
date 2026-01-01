@@ -4,14 +4,17 @@ const reviews = [
   {
     name: "John Doe",
     text: "This AR drawing app made sketching so simple. I can trace and draw with much better accuracy.",
+    image: "/images/review1.png",
   },
   {
-    name: "John Doe",
-    text: "This AR drawing app made sketching so simple. I can trace and draw with much better accuracy.",
+    name: "Emma Wilson",
+    text: "This AR drawing app makes sketching much easier than I expected. Tracing helps me draw more cleanly and confidently.",
+    image: "/images/review2.png",
   },
   {
-    name: "John Doe",
-    text: "This AR drawing app made sketching so simple. I can trace and draw with much better accuracy.",
+    name: "Alex Carter",
+    text: "Using this AR drawing app improved my accuracy a lot. Tracing guides make sketching smoother and more enjoyable.",
+    image: "/images/review3.png",
   },
 ];
 
@@ -35,7 +38,7 @@ export default function Testimonials() {
             <div
               key={i}
               className="
-                bg-[#FFE9E5]
+                bg-[#FFA3A229]
                 border border-[#FFB3AA]
                 rounded-[22px]
                 p-4
@@ -49,7 +52,7 @@ export default function Testimonials() {
               {/* Header */}
               <div className="flex items-center gap-4">
                 <Image
-                  src="/images/review.png"
+                  src={r.image} // updated image
                   alt={r.name}
                   width={44}
                   height={44}
@@ -69,7 +72,7 @@ export default function Testimonials() {
               </div>
 
               {/* Review text */}
-              <p className="text-gray-700 text:[16px] md:text-[18px] leading-relaxed">
+              <p className="text-gray-700 text-[16px] md:text-[18px] leading-relaxed">
                 {r.text}
               </p>
             </div>

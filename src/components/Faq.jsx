@@ -4,31 +4,31 @@ import { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 
 const faqs = [
-  {
-    question: "What services does DEVSRANK offer?",
-    answer:
-      "DEVSRANK offers a wide range of digital solutions, including mobile app development, website development, UI/UX design, and digital strategy to help businesses grow and innovate.",
-  },
-  {
-    question: "What services does DEVSRANK offer?",
-    answer:
-      "DEVSRANK offers a wide range of digital solutions, including mobile app development, website development, UI/UX design, and digital strategy to help businesses grow and innovate.",
-  },
-  {
-    question: "What services does DEVSRANK offer?",
-    answer:
-      "DEVSRANK offers a wide range of digital solutions, including mobile app development, website development, UI/UX design, and digital strategy to help businesses grow and innovate.",
-  },
-  {
-    question: "What services does DEVSRANK offer?",
-    answer:
-      "DEVSRANK offers a wide range of digital solutions, including mobile app development, website development, UI/UX design, and digital strategy to help businesses grow and innovate.",
-  },
-  {
-    question: "What services does DEVSRANK offer?",
-    answer:
-      "DEVSRANK offers a wide range of digital solutions, including mobile app development, website development, UI/UX design, and digital strategy to help businesses grow and innovate.",
-  },
+ {
+  question: "What is the AR Drawing feature?",
+  answer:
+    "AR Drawing lets you overlay sketches or designs onto the real world using your device’s camera, making drawing interactive and precise.",
+},
+{
+  question: "Do I need special equipment to use the app?",
+  answer:
+    "No. You only need a compatible smartphone, tablet, or computer with a camera and internet access. No additional hardware is required.",
+},
+{
+  question: "Can I upload my own images to draw?",
+  answer:
+    "Yes! You can upload images from your gallery and use them as a reference or trace to create your drawings.",
+},
+{
+  question: "Does the app work offline?",
+  answer:
+    "Some features, like basic drawing, may work offline. However, AR features and cloud saving require an internet connection.",
+},
+{
+  question: "Is this app suitable for beginners and kids?",
+  answer:
+    "Absolutely! The app is designed to be intuitive and easy to use for beginners, kids, and anyone who loves to draw.",
+}
 ];
 
 export default function Faq() {

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AppPreview() {
   return (
-    <section className="bg-[#FFF7F5] md:pb-16">
+    <section id="app" className="bg-[#FFF7F5] md:pb-16">
       <div className="MyContainer grid grid-cols-2 items-center md:grid-cols-2 md:gap-16">
         {/* LEFT – PHONE PREVIEW */}
         <div className="flex justify-center col-span-2 md:col-span-1">

@@ -21,9 +21,9 @@ export default function Footer() {
           </div>
 
           {/* TITLE */}
-          <h3 className="text-[32px] md:text-[36px] font-bold text-[#FF7F73] md:mb-10 mb-5">
-            AR Drawing
-          </h3>
+          <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#FF6B6B] to-[#FF9F80] bg-clip-text text-transparent mb-5 md:mb-10">
+  AR Drawing
+</h3>
 
           {/* LINKS */}
           <div className="flex items-center md:gap-14 gap-8 md:mb-10 mb-5">

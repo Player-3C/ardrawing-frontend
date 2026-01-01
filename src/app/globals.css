@@ -67,3 +67,29 @@ body {
 .img {
   object-fit: contain;
 }
+
+
+
+
+.my-div1 {
+  display: none; /* hidden by default (below 1280px) */
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .my-div1 {
+    display: block; /* visible only between 1280px and 1440px */
+  }
+}
+
+
+
+
+.my-div2 {
+  display: none; /* hidden by default (below 1150px) */
+}
+
+@media (min-width: 1441px) {
+  .my-div2 {
+    display: block; /* visible only above 1440px */
+  }
+}

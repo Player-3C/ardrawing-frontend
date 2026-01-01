@@ -48,7 +48,10 @@ export default function Hero() {
           </p>
 
           <div className="flex justify-center md:justify-start mt-8 w-full">
-            <button className="flex items-center gap-3 px-10 py-3 rounded-full text-white shadow-lg bg-gradient-to-r from-[#FF6B6B] to-[#FF9F80] hover:opacity-90 transition text-[18px] font-medium">
+            <button
+              className="flex items-center gap-3 px-10 py-3 rounded-full text-white shadow-lg bg-gradient-to-r from-[#FF6B6B] to-[#FF9F80] text-[18px] font-medium transition-transform duration-300 ease-out hover:scale-105 hover:opacity-90"
+            >
+              {" "}
               <span>Start Drawing</span>
               <Image
                 src="/images/pencil.png"
