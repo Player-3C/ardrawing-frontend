@@ -28,14 +28,14 @@ export default function Footer() {
           {/* LINKS */}
           <div className="flex items-center md:gap-14 gap-8 md:mb-10 mb-5">
             <Link
-              href="/privacy-policy"
+              href=""
               className="text-[16px] md:text-[18px] font-bold text-gray-900 hover:opacity-80 transition"
             >
               Privacy Policy
             </Link>
 
             <Link
-              href="/terms"
+              href=""
               className="text-[16px] md:text-[18px] font-bold text-gray-900 hover:opacity-80 transition"
             >
               Terms & Conditions
