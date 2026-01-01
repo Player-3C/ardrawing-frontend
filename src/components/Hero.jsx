@@ -22,7 +22,7 @@ export default function Hero() {
         {/* IMAGE */}
         <div className="relative w-full h-[300px] md:h-[600px] order-1 md:order-2 mt-8 md:mt-0">
           <Image
-            src="/images/hero.webp"
+            src="/images/hero.png"
             alt="AR Drawing"
             fill
             className="object-contain"
