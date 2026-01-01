@@ -18,7 +18,7 @@ export default function Navbar() {
             alt="Logo"
             width={150}
             height={150}
-            className="md:h-[8vh] md:w-[9vh]"
+            className="lg:h-[50px] lg:w-[50px] md:h-[35px] md:w-[35px]"
           />
           <h2 className="hidden md:block font-bold bg-linear-to-r from-[#FF6B6B] to-[#FF9F80] bg-clip-text text-transparent text-[22px] whitespace-nowrap">AR Drawing</h2>
         </div>
