@@ -42,7 +42,7 @@ export default function Faq() {
   if (!mounted) return null;
 
   return (
-    <section className="bg-[#FFF7F5] md:py-16 py-8">
+    <section className="bg-[#FFF7F5] md:py-14 py-7">
       <div className="MyContainer">
         <h2 className="text-center">
           Frequently Asked Questions
@@ -53,7 +53,7 @@ export default function Faq() {
           trace, and create art easily.
         </p>
 
-        <div className="md:mt-14 mt-8 space-y-4">
+        <div className="md:mt-14 mt-5 space-y-4">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (

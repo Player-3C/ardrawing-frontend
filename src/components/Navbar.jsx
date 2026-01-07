@@ -22,8 +22,8 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <div className="flex items-center justify-center w-full md:gap-10 lg:gap-20">
-          <ul className="hidden md:flex items-center gap-10 md:gap-15 text-[18px] md:text-[20px] lg:text-[24px] font-semibold text-gray-900">
+        <div className="flex items-center justify-center w-full">
+          <ul className="hidden md:flex items-center gap-10 md:gap-12 lg:gap-15 text-[18px] md:text-[18px] lg:text-[24px] font-semibold text-gray-900">
             {menuItems.map((item) => (
               <li key={item}>
                 <a

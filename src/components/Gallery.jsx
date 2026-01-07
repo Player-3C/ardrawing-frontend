@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ExploreSketches() {
   return (
-    <section className="bg-[#FFF7F5] pt-16 pb-10 overflow-hidden">
+    <section className="bg-[#FFF7F5] pb-7 pt-14 md:py-14 overflow-hidden">
       <div className="MyContainer">
         {/* Heading */}
         <h2 className="text-center text-black">

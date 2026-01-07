@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Skills() {
   return (
-    <div className="bg-[#FFF7F5] py-8 md:py-16">
+    <div className="bg-[#FFF7F5] py-7 md:py-14">
       <section className="MyContainer">
         <div className=" bg-[#FFA3A229] border border-[#FFB3AA] rounded-[50px] md:shadow-lg shadow-xl md:px-9 md:py-12 p-6">
           <div className="grid items-center md:gap-3">

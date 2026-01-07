@@ -85,7 +85,7 @@ export default function Contact() {
               />
             </div>
 
-            <div className="mt-4 flex justify-center md:justify-end">
+            <div className="mt-4 md:mt-7 lg:mt-13 flex justify-center md:justify-end">
               <button
                 type="submit"
                 className="bg-gradient-to-r from-[#FF6B6B] to-[#FF9F80] text-white px-9 py-3 rounded-full font-semibold transition-transform duration-300 ease-out hover:scale-105 hover:opacity-90"

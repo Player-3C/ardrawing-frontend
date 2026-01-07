@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function AppPreview() {
   return (
-    <section id="app" className="bg-[#FFF7F5] md:pb-16">
-      <div className="MyContainer grid grid-cols-2 items-center md:grid-cols-2 md:gap-16">
+    <section id="app" className="bg-[#FFF7F5] py-7 md:py-14">
+      <div className="MyContainer grid grid-cols-2 items-center md:grid-cols-2 gap-5 md:gap-16">
         {/* LEFT – PHONE PREVIEW */}
         <div className="flex justify-center col-span-2 md:col-span-1">
           <Image
@@ -29,7 +29,7 @@ export default function AppPreview() {
           </p>
 
           {/* STORE BUTTONS */}
-          <div className="flex flex-col sm:flex-row justify-center md:justify-start items-center md:items-start gap-4 mb-8 md:mb-4 lg:mb-12">
+          <div className="flex flex-col sm:flex-row justify-center md:justify-start items-center md:items-start gap-4 mb-0 md:mb-4 lg:mb-12">
             <div>
               <Image
                 src="/images/appstore.png"

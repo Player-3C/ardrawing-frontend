@@ -20,7 +20,7 @@ const features = [
 
 export default function Features() {
   return (
-    <div id="features" className="bg-[#FFF7F5] py-8 md:py-16">
+    <div id="features" className="bg-[#FFF7F5] py-7 md:py-14">
       <section>
         <div className="MyContainer">
           <h2 className="text-center text-black">
@@ -33,7 +33,7 @@ export default function Features() {
             ease.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-6 md:pt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 md:pt-12">
             {features.map((f) => (
               <div
                 key={f.title}

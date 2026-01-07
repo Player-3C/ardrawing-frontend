@@ -20,7 +20,7 @@ const reviews = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#FFF7F5] py-8 md:py-8 lg:py-12">
+    <section className="bg-[#FFF7F5] py-7 md:py-8 lg:py-14">
       <div className="MyContainer">
         {/* Heading */}
         <h2 className="text-center">
@@ -32,7 +32,7 @@ export default function Testimonials() {
         </p>
 
         {/* Reviews */}
-        <div className="mt-8 md:mt-10 lg:mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-5 md:mt-10 lg:mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           {reviews.map((r, i) => (
             <div
               key={i}

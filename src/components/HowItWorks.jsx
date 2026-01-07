@@ -2,7 +2,7 @@ import { div } from "framer-motion/client";
 
 export default function HowItWorks() {
   return (
-    <div id="explore" className="bg-[#FFF7F5] py-8 md:py-16">
+    <div id="explore" className="bg-[#FFF7F5] py-7 md:py-14">
       {/* Desktop version: 1440px and above */}
 
       {/* This div is hidden between 1150px - 1440px for responsive curve bg-line on Laptop */}
@@ -59,7 +59,7 @@ export default function HowItWorks() {
             </div>
 
             {/* STEP 3 */}
-            <div className="absolute right-5 top-1 grid items-start gap-4">
+            <div className="absolute right-5 top-3 grid items-start gap-4">
               <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
                 3
               </span>
@@ -198,7 +198,7 @@ function Step({ title, desc }) {
 /* Mobile / Tablet Step (no dots for mobile/tablet) */
 function StepMobile({ number, title, desc }) {
   return (
-    <div className="flex flex-col items-center gap-3 text-center">
+    <div className="flex flex-col items-center text-center">
       <span className="text-[48px] sm:text-[56px] font-extrabold text-black/10">
         {number}
       </span>
