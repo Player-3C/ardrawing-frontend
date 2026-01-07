@@ -11,14 +11,14 @@ export default function HowItWorks() {
         style={{
           backgroundImage: "url('/images/hiw-bg.png')",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "left  top 15px",
-          backgroundSize: "90%",
+          backgroundPosition: "left -20px top 15px",
+          backgroundSize: "1040px",
         }}
       >
         <div className="mx-auto grid grid-cols-2 gap-16 items-start">
           {/* LEFT COLUMN */}
-          <div className="relative min-h-160">
-            <h2 className="mb-6">
+          <div className="relative ">
+            <h2 className="text-[42px] font-bold text-gray-900 mb-6">
               How AR Drawing
               <br />
               Works one
@@ -30,9 +30,9 @@ export default function HowItWorks() {
             </p>
 
             {/* STEP 1 */}
-            <div className=" top-[37%]">
-              <div className="relative grid items-start gap-4 mt-25 ml-30">
-                <span className="absolute right-40 -top-20 text-[170px] font-extrabold text-black/5">
+            <div className="absolute left-25 top-61">
+              <div className="relative grid items-start justify-end gap-4 mt-30">
+                <span className="absolute right-0 -top-20 text-[170px] font-extrabold text-black/5">
                   1
                 </span>
                 <Dot />
@@ -45,9 +45,9 @@ export default function HowItWorks() {
           </div>
 
           {/* RIGHT FLOW */}
-          <div className="relative min-h-160">
+          <div className="relative">
             {/* STEP 2 */}
-            <div className="absolute top-[37%] -left-[20%] grid items-start gap-4">
+            <div className="absolute top-60 -left-25 grid items-start gap-4">
               <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
                 2
               </span>
@@ -59,7 +59,7 @@ export default function HowItWorks() {
             </div>
 
             {/* STEP 3 */}
-            <div className="absolute left-[52%] lg:mt-4 grid items-start gap-4">
+            <div className="absolute left-55 top-13 grid items-start gap-4">
               <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
                 3
               </span>
@@ -86,13 +86,13 @@ export default function HowItWorks() {
         <div className="mx-auto grid grid-cols-2 gap-16 items-start">
           {/* LEFT COLUMN */}
           <div className="relative">
-            <h2 className="mb-6">
+            <h2 className="text-[42px] font-bold text-gray-900 mb-6">
               How AR Drawing
               <br />
               Works
             </h2>
 
-            <p className="text-[#1E1E1E] text-[18px] md:text-[24px] max-w-100 leading-relaxed mb-16">
+            <p className="text-[#1E1E1E] text-[18px] max-w-100 leading-relaxed mb-16">
               Learn to create sketches with AR Drawing. Upload or select images,
               choose a feature, and start sketching directly on your mobile.
             </p>
