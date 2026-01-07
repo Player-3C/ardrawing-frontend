@@ -47,7 +47,7 @@ export default function HowItWorks() {
           {/* RIGHT FLOW */}
           <div className="relative min-h-160">
             {/* STEP 2 */}
-            <div className="absolute top-[37%] -left-[20%] grid items-start gap-4">
+            <div className="absolute top-[37%] -left-[10%] grid items-start gap-4">
               <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
                 2
               </span>
@@ -115,7 +115,7 @@ export default function HowItWorks() {
           {/* RIGHT FLOW */}
           <div className="relative">
             {/* STEP 2 */}
-            <div className="absolute top-78 grid items-start gap-4">
+            <div className="absolute top-78 -left-5 grid items-start gap-4">
               <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
                 2
               </span>
