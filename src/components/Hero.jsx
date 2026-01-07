@@ -20,7 +20,7 @@ export default function Hero() {
         }}
       >
         {/* IMAGE */}
-        <div className="relative w-full h-[300px] md:h-[600px] order-1 md:order-2 mt-8 md:mt-0">
+        <div className="relative w-full h-[300px] md:h-[450px] lg:h-[600px] order-1 md:order-2 mt-8 md:mt-0">
           <Image
             src="/images/hero.png"
             alt="AR Drawing"
@@ -32,7 +32,7 @@ export default function Hero() {
 
         {/* TEXT */}
         <div className="flex flex-col justify-center items-center md:items-start order-2 md:order-1">
-          <h1 className="text-[36px] text-center md:text-left md:text-[48px] font-extrabold leading-tight text-black">
+          <h1 className="text-center md:text-left tracking-wide md:pt-10 lg:pt-0">
             <span className="bg-linear-to-r from-[#FF6B6B] to-[#FF9F80] bg-clip-text text-transparent">
               AR
             </span>{" "}
@@ -40,14 +40,14 @@ export default function Hero() {
             Draw & Trace Sketches Easily
           </h1>
 
-          <p className="mt-6 text-[#1e1e1e] text-[18px] md:text-[20px] leading-7 tracking-[0.02em] text-center md:text-left">
+          <p className="mt-3 md:mt-3 lg:mt-6 text-[#1e1e1e] text-[18px] md:text-[18px] lg:text-[24px] leading-9 tracking-[0.02em] text-center md:text-left">
             Transform your phone into a powerful AR drawing and sketching app.
             Draw with precision, trace images perfectly on paper using your
             camera, and create professional-quality sketches quickly and
             effortlessly.
           </p>
 
-          <div className="flex justify-center md:justify-start mt-8 w-full">
+          <div className="flex justify-center md:justify-start mt-4 md:mt-6 lg:mt-8 w-full">
             <button
               className="flex items-center gap-3 px-10 py-3 rounded-full text-white shadow-lg bg-gradient-to-r from-[#FF6B6B] to-[#FF9F80] text-[18px] font-medium transition-transform duration-300 ease-out hover:scale-105 hover:opacity-90"
             >

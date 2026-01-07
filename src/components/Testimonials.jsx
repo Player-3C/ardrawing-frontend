@@ -20,20 +20,19 @@ const reviews = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#FFF7F5] py-8 md:py-12">
+    <section className="bg-[#FFF7F5] py-8 md:py-8 lg:py-12">
       <div className="MyContainer">
         {/* Heading */}
-        <h2 className="text-[32px] md:text-[42px] md:font-extrabold font-bold text-center text-black">
+        <h2 className="text-center">
           User Reviews of AR Drawing
         </h2>
 
-        <p className="mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] max-w-6xl mx-auto">
-          Real feedback from artists, beginners, and creators using our AR drawing
-          and sketching tools.
+        <p className="mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[24px] max-w-4xl mx-auto">
+          Real feedback from artists, beginners, and creators using our AR drawing and sketching tools.
         </p>
 
         {/* Reviews */}
-        <div className="mt-8 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-8 md:mt-10 lg:mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((r, i) => (
             <div
               key={i}
@@ -42,7 +41,8 @@ export default function Testimonials() {
                 border border-[#FFB3AA]
                 rounded-[22px]
                 p-4
-                md:p-6
+                md:p-4
+                lg:p-6
                 lg:p-8
                 flex flex-col
                 gap-4
@@ -60,7 +60,7 @@ export default function Testimonials() {
                 />
 
                 <div>
-                  <h4 className="text-black font-semibold text-lg">
+                  <h4 className="text-black font-semibold text-[18px] md:text-[18px] lg:text-[24px]">
                     {r.name}
                   </h4>
 
@@ -72,7 +72,7 @@ export default function Testimonials() {
               </div>
 
               {/* Review text */}
-              <p className="text-gray-700 text-[16px] md:text-[18px] leading-relaxed">
+              <p className="text-gray-700 text-[16px] md:text-[16px] lg:text-[18px] leading-relaxed">
                 {r.text}
               </p>
             </div>

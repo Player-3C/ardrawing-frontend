@@ -93,3 +93,16 @@ body {
     display: block; /* visible only above 1440px */
   }
 }
+
+
+h1 {
+  @apply text-[36px] md:text-[38px] lg:text-[75px] font-extrabold leading-none text-black;
+}
+
+h2 {
+  @apply text-[30px] md:text-[36px] lg:text-[60px] font-extrabold leading-tight text-black;
+}
+
+h3 {
+  @apply text-[24px] md:text-[26px] lg:text-[28px] font-semibold leading-tight text-black;
+}

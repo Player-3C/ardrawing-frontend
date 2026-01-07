@@ -22,10 +22,10 @@ export default function Contact() {
           {/* LEFT INFO - WIDER */}
           <div className="bg-[#FFF4F2] rounded-[28px] p-6 md:p-8 flex flex-col md:gap-9 lg:w-2/5">
             <div>
-              <h2 className="text-[32px] md:text-[36px] font-extrabold text-black">
+              <h2>
                 Contact Us
               </h2>
-              <p className="mt-3 text-[#1e1e1e] text-[16px] md:text-[18px] leading-relaxed">
+              <p className="mt-3 text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[24px] leading-relaxed">
                 Contact us for help with AR drawing, tracing, and sketching.
               </p>
             </div>
@@ -33,17 +33,17 @@ export default function Contact() {
             <div className="mt-6 space-y-6 text-[#1e1e1e] grid md:gap-9">
               <div className="flex items-center gap-4">
                 <Phone size={20} />
-                <span className="text-[16px] md:text-[18px]">+92 (300) 1234 968</span>
+                <span className="text-[16px]">+92 (300) 1234 968</span>
               </div>
 
               <div className="flex items-center gap-4">
                 <Mail size={20} />
-                <span className="text-[16px] md:text-[18px]">akash@devsrank.com</span>
+                <span className="text-[16px]">akash@devsrank.com</span>
               </div>
 
               <div className="flex items-start gap-4">
                 <MapPin size={40} />
-                <span className="leading-relaxed text-[16px] md:text-[16px] md:pb-4">
+                <span className="leading-relaxed text-[16px] md:pb-4">
                   Office #112, 2nd Floor Kohinoor Plaza 1,
                   Faisalabad, Punjab, Pakistan
                 </span>
@@ -66,7 +66,7 @@ export default function Contact() {
                 Select Subject
               </p>
 
-              <div className="flex flex-wrap gap-x-10 gap-y-3 text-[#1e1e1e] text-[15px] md:text-[16px]">
+              <div className="flex flex-wrap gap-x-10 md:gap-x-30 gap-y-3 text-[#1e1e1e] text-[12px] md:text-[12px]">
                 {subjects.map((s) => (
                   <Radio key={s} label={s} selected={subject} onChange={setSubject} />
                 ))}

@@ -1,9 +1,9 @@
-import { Montserrat } from "next/font/google";
+import { Urbanist } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({
+const urbanist = Urbanist({
   subsets: ["latin"],
-  weight: ["500", "600", "700"], // good replacements for semibold/bold
+  weight: ["500", "600", "700"],
   display: "swap",
 });
 
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-[#FFF1EE]`}>
+      <body className={`${urbanist.className} bg-[#FFF1EE]`}>
         {children}
       </body>
     </html>

@@ -23,11 +23,11 @@ export default function Features() {
     <div id="features" className="bg-[#FFF7F5] py-8 md:py-16">
       <section>
         <div className="MyContainer">
-          <h2 className="text-[28px] md:text-[42px] font-bold md:font-extrabold text-center text-black">
+          <h2 className="text-center text-black">
             Smart Drawing Features
           </h2>
 
-          <p className="mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] max-w-6xl mx-auto">
+          <p className="mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[24px] max-w-6xl mx-auto">
             Discover smart drawing features that let you sketch freely, trace
             images, and draw real-world objects using your phone camera with
             ease.
@@ -60,7 +60,7 @@ export default function Features() {
                   </h3>
                 </div>
 
-                <p className="text-gray-700 mt-6 text-[16px] lg:text-[18px] leading-relaxed">
+                <p className="text-gray-700 mt-7 text-[16px] md:text-[18px] lg:text-[22px]">
                   {f.desc}
                 </p>
               </div>

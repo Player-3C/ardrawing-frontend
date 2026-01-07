@@ -7,7 +7,7 @@ export default function HowItWorks() {
 
       {/* This div is hidden between 1150px - 1440px for responsive curve bg-line on Laptop */}
       <section
-        className="my-div1 hidden xl:block MyContainer max-w-6xl w-[90%] m-auto relative overflow-hidden min-h-155"
+        className="my-div1 hidden xl:block MyContainer max-w-6xl w-[90%] m-auto relative overflow-hidden min-h-160"
         style={{
           backgroundImage: "url('/images/hiw-bg.png')",
           backgroundRepeat: "no-repeat",
@@ -47,7 +47,7 @@ export default function HowItWorks() {
           {/* RIGHT FLOW */}
           <div className="relative">
             {/* STEP 2 */}
-            <div className="absolute top-62 grid items-start gap-4">
+            <div className="absolute top-58 grid items-start gap-4">
               <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
                 2
               </span>
@@ -59,7 +59,7 @@ export default function HowItWorks() {
             </div>
 
             {/* STEP 3 */}
-            <div className="absolute right-0 top-5 grid items-start gap-4">
+            <div className="absolute right-5 top-1 grid items-start gap-4">
               <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
                 3
               </span>
@@ -144,11 +144,11 @@ export default function HowItWorks() {
       {/* Tablet & Mobile version: below 1440px */}
       <section className="block xl:hidden MyContainer">
         <div className="flex flex-col gap-4">
-          <h2 className="text-[32px] sm:text-[36px] font-semibold text-gray-900 text-center">
+          <h2 className="text-center">
             How AR Drawing Works
           </h2>
 
-          <p className="text-[#1E1E1E] text-[16px] sm:text-[28px] text-center leading-relaxed max-w-full sm:max-w- mx-auto">
+          <p className="text-[#1E1E1E] text-[16px] md:text-[20px] lg:text-[24px] text-center leading-relaxed max-w-xl mx-auto">
             Learn to create sketches with AR Drawing. Upload or select images,
             choose a feature, and start sketching directly on your mobile.
           </p>
@@ -187,8 +187,8 @@ function Dot() {
 function Step({ title, desc }) {
   return (
     <div>
-      <h4 className="font-semibold text-gray-900 text-[22px] mb-1">{title}</h4>
-      <p className="text-sm text-[#6B6B6B] max-w-60 text-[18px] leading-relaxed">
+      <h3 className="mb-1">{title}</h3>
+      <p className="text-sm text-[#6B6B6B] max-w-60 text-[18px] md:text-[20px] lg:text-[22px]">
         {desc}
       </p>
     </div>
