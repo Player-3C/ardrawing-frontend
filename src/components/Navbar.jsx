@@ -43,7 +43,7 @@ export default function Navbar() {
               alt="Download on the App Store"
               width={100}
               height={40}
-              className="md:w-[100px] lg:w-[150px]"
+              className="w-[20vh]"
             />
           </div>
         </div>
