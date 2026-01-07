@@ -20,14 +20,14 @@ const reviews = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#FFF7F5] py-7 md:py-8 lg:py-14">
+    <section className="bg-[#FFF7F5] py-7 md:py-14">
       <div className="MyContainer">
         {/* Heading */}
         <h2 className="text-center">
           User Reviews of AR Drawing
         </h2>
 
-        <p className="mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[24px] max-w-4xl mx-auto">
+        <p className="mt-2 md:mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[24px] max-w-4xl mx-auto">
           Real feedback from artists, beginners, and creators using our AR drawing and sketching tools.
         </p>
 

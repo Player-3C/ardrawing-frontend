@@ -48,7 +48,7 @@ export default function Faq() {
           Frequently Asked Questions
         </h2>
 
-        <p className="mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] md:text-[24px] max-w-4xl mx-auto">
+        <p className="mt-2 md:mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] md:text-[24px] max-w-4xl mx-auto">
           Everything you need to know about using our AR drawing app to sketch,
           trace, and create art easily.
         </p>

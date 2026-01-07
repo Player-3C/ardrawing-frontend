@@ -4,12 +4,12 @@ export default function Skills() {
     <div className="bg-[#FFF7F5] py-7 md:py-14">
       <section className="MyContainer">
         <div className=" bg-[#FFA3A229] border border-[#FFB3AA] rounded-[50px] md:shadow-lg shadow-xl md:px-9 md:py-12 p-6">
-          <div className="grid items-center md:gap-3">
+          <div className="grid items-center md:gap-0">
             <h2 className="text-center tracking-wide">
               Boost Your Drawing Skills
             </h2>
 
-            <p className="md:mt-4 text-center text-[#1e1e1e] text-[18px] md:text-[20px] lg:text-[24px] max-w-6xl mx-auto">
+            <p className="md:mt-4 mt-2 text-center text-[#1e1e1e] text-[18px] md:text-[20px] lg:text-[24px] max-w-6xl mx-auto">
               Practice drawing regularly using AR guidance and smart tracing
               features that help you improve accuracy and control. AR Drawing
               makes learning easier by guiding your hand, helping you build

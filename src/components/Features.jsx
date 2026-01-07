@@ -27,7 +27,7 @@ export default function Features() {
             Smart Drawing Features
           </h2>
 
-          <p className="mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[24px] max-w-6xl mx-auto">
+          <p className="mt-2 md:mt-4 text-center text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[24px] max-w-6xl mx-auto">
             Discover smart drawing features that let you sketch freely, trace
             images, and draw real-world objects using your phone camera with
             ease.
@@ -41,26 +41,26 @@ export default function Features() {
                   min-h-[13rem] md:min-h-[16rem] 
                   bg-[#FFA3A229] border border-[#FFB3AA]
                   rounded-[22px] shadow
-                  px-6 py-9 md:px-6 md:py-9 lg:px-6 lg:py-9
+                  px-6 py-9 md:px-4 md:py-6 lg:px-6 lg:py-9
                   flex flex-col
                 "
               >
                 {/* IMAGE */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 md:gap-2 lg:gap-4">
                   <Image
                     src={f.img}
                     alt={f.title}
                     width={35}
                     height={35}
-                    className="object-contain"
+                    className="object-contain md:w-[25] md:h-[25]"
                   />
 
-                  <h3 className="text-black text-[20px] lg:text-[24px] font-bold tracking-wide">
+                  <h4 className="text-black text-[20px] md:text-[20px] lg:text-[26px] font-bold tracking-wide">
                     {f.title}
-                  </h3>
+                  </h4>
                 </div>
 
-                <p className="text-gray-700 mt-7 text-[16px] md:text-[18px] lg:text-[22px]">
+                <p className="text-gray-700 mt-7 md:mt-5 lg:mt-7 text-[16px] md:text-[18px] lg:text-[22px]">
                   {f.desc}
                 </p>
               </div>

@@ -14,7 +14,7 @@ export default function Contact() {
   const subjects = ["General Inquiry", "Feedback", "Other"];
 
   return (
-    <section id="contactus" className="bg-[#FFF7F5] pb-8 md:pt-16 md:pb-28">
+    <section id="contactus" className="bg-[#FFF7F5] py-7 md:py-14">
       <div className="MyContainer">
         {/* FLEX WRAPPER */}
         <div className="bg-[#FFA3A229] rounded-4xl p-3 md:p-6 flex flex-col lg:flex-row gap-8 border border-[#FFB1AC]">
@@ -25,7 +25,7 @@ export default function Contact() {
               <h2>
                 Contact Us
               </h2>
-              <p className="mt-3 text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[24px] leading-relaxed">
+              <p className="mt-2 md:mt-3 text-[#1e1e1e] text-[16px] md:text-[18px] lg:text-[24px] leading-relaxed">
                 Contact us for help with AR drawing, tracing, and sketching.
               </p>
             </div>
@@ -52,7 +52,7 @@ export default function Contact() {
           </div>
 
           {/* RIGHT FORM */}
-          <form className="lg:w-3/5 px-4 md:px-6 py-4 flex flex-col">
+          <form className="lg:w-3/5 p-4 md:px-6 md:pt-4 md:pb-0 flex flex-col">
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
               <Input label="First Name" value={firstName} onChange={setFirstName} />
@@ -85,7 +85,7 @@ export default function Contact() {
               />
             </div>
 
-            <div className="mt-4 md:mt-7 lg:mt-13 flex justify-center md:justify-end">
+            <div className="mt-4 md:mt-25 lg:mt-13 flex justify-center md:justify-end">
               <button
                 type="submit"
                 className="bg-gradient-to-r from-[#FF6B6B] to-[#FF9F80] text-white px-9 py-3 rounded-full font-semibold transition-transform duration-300 ease-out hover:scale-105 hover:opacity-90"

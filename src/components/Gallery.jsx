@@ -16,7 +16,7 @@ export default function ExploreSketches() {
 
         <div className="grid gap-6">
           {/* GRID */}
-          <div className="grid grid-cols-12 gap-6 md:pt-16 pt-8">
+          <div className="grid grid-cols-12 gap-6 md:pt-12 lg:pt-16 pt-6">
             {/* Tall Card */}
             <div className="col-span-12 sm:col-span-6 md:col-span-3">
               <div className="h-126 md:h-90 lg:h-126 bg-[#FFA3A229] border border-[#FFB3AA] rounded-[22px] flex items-center justify-center">

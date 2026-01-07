@@ -30,7 +30,7 @@ export default function HowItWorks() {
             </p>
 
             {/* STEP 1 */}
-            <div className="absolute left-42 top-65">
+            <div className="absolute left-25 top-61">
               <div className="relative grid items-start justify-end gap-4 mt-30">
                 <span className="absolute right-0 -top-20 text-[170px] font-extrabold text-black/5">
                   1
@@ -47,7 +47,7 @@ export default function HowItWorks() {
           {/* RIGHT FLOW */}
           <div className="relative">
             {/* STEP 2 */}
-            <div className="absolute top-58 grid items-start gap-4">
+            <div className="absolute top-60 -left-25 grid items-start gap-4">
               <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
                 2
               </span>
@@ -59,7 +59,7 @@ export default function HowItWorks() {
             </div>
 
             {/* STEP 3 */}
-            <div className="absolute right-5 top-3 grid items-start gap-4">
+            <div className="absolute left-55 top-13 grid items-start gap-4">
               <span className="absolute right-0 -top-22 text-[200px] font-extrabold text-black/5">
                 3
               </span>
@@ -144,14 +144,16 @@ export default function HowItWorks() {
       {/* Tablet & Mobile version: below 1440px */}
       <section className="block xl:hidden MyContainer">
         <div className="flex flex-col gap-4">
-          <h2 className="text-center">
+          <div>
+            <h2 className="text-center">
             How AR Drawing Works
           </h2>
 
-          <p className="text-[#1E1E1E] text-[16px] md:text-[20px] lg:text-[24px] text-center leading-relaxed max-w-xl mx-auto">
+          <p className="text-[#1E1E1E] mt-2 text-[16px] md:text-[20px] lg:text-[24px] text-center leading-relaxed max-w-xl mx-auto">
             Learn to create sketches with AR Drawing. Upload or select images,
             choose a feature, and start sketching directly on your mobile.
           </p>
+          </div>
 
           {/* Steps stacked vertically */}
           <StepMobile
