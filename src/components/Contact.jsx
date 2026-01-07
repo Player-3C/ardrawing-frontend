@@ -14,7 +14,7 @@ export default function Contact() {
   const subjects = ["General Inquiry", "Feedback", "Other"];
 
   return (
-    <section id="contactus" className="bg-[#FFF7F5] py-7 md:py-14">
+    <section id="contactus" className="bg-[#FFF7F5] py-7 md:pt-14 md:pb-28">
       <div className="MyContainer">
         {/* FLEX WRAPPER */}
         <div className="bg-[#FFA3A229] rounded-4xl p-3 md:p-6 flex flex-col lg:flex-row gap-8 border border-[#FFB1AC]">
